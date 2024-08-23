@@ -1,0 +1,52 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.4 (Ubuntu 16.4-0ubuntu0.24.04.1)
+-- Dumped by pg_dump version 16.4 (Ubuntu 16.4-0ubuntu0.24.04.1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: disciplina; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.disciplina (
+    coddisc character varying(9),
+    nomedisc character varying(50),
+    periododisc integer,
+    notadisc integer,
+    aprovdisc boolean
+);
+
+
+ALTER TABLE public.disciplina OWNER TO postgres;
+
+--
+-- Data for Name: disciplina; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.disciplina (coddisc, nomedisc, periododisc, notadisc, aprovdisc) FROM stdin;
+1111.1.11	teste nome	2	0	f
+1112.2.12	outro teste nome	2	0	f
+1113.2.23	mais outro teste nome	8	0	f
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
